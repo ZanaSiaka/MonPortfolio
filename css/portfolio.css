@@ -1,0 +1,318 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+    width: 100%;
+}
+
+body{
+    display: contents;
+    flex-direction: column;
+    min-height: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.principal{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+nav{
+    display: flex;
+    background-color: #002064;
+    height: 60px;
+    width: 100%;
+    justify-content: space-between;
+}
+
+nav img{
+    margin-left: 4%;
+    width: 50px;
+    height: 50px;
+    margin-top: 0.5%;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    font-size: 1.2em;
+    align-items: center;
+    margin-right: 4%;
+}
+
+nav ul li{
+    margin: 0 20px;
+    text-decoration: none;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    transition: all 0.3s ease-in-out;
+    transform: translateX(0);
+}
+
+nav ul li a:hover{
+    border-bottom: 5px solid;
+    transform: translateX(1);
+    border-radius: 3px;
+}
+
+nav ul li .portfolio{
+    color: #009FE3;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(3, 305px);
+    justify-content: center;
+    margin-top: 4%;
+    text-transform: capitalize;
+    font-size: 1.2em;
+    font-weight: 700;
+    color: azure;
+    margin-bottom: 4%;
+}
+
+.card{
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
+    margin-bottom: 4%;
+    border-radius: 14px;
+}
+
+.card-inner{
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 0.8s ease-in-out;
+}
+
+.card:hover .card-inner{
+    transform: rotateY(180deg);
+}
+
+.card-font, .card-back{
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    position: absolute;
+    border-radius: 14px;
+}
+
+.card-font{
+    display: flex;
+    background-color: #009FE3;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.card-back{
+    display: flex;
+    transform: rotateY(180deg);
+    box-shadow: 2px 4px 6px #009FE3;
+}
+
+.card2{
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
+}
+
+.card-inner2{
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 0.8s ease-in-out;
+}
+
+.card2:hover .card-inner2{
+    transform: rotateY(180deg);
+}
+
+.card-font2, .card-back2{
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    position: absolute;
+    border-radius: 14px;
+}
+
+.card-font2{
+    display: flex;
+    background-color: #009FE3;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.card-back2{
+    display: flex;
+    transform: rotateY(180deg);
+    box-shadow: 2px 4px 6px #009FE3;
+}
+
+.card3{
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
+}
+
+.card-inner3{
+    margin-bottom: 5%;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 0.8s ease-in-out;
+}
+
+.card3:hover .card-inner3{
+    transform: rotateY(180deg);
+}
+
+.card-font3, .card-back3{
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 14px;
+    position: absolute;
+}
+
+.card-font3{
+    display: flex;
+    background-color: #009FE3;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.card-back3{
+    display: flex;
+    transform: rotateY(180deg);
+    box-shadow: 2px 4px 6px #009FE3;
+}
+
+.card4{
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
+}
+
+.card-inner4{
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 0.8s ease-in-out;
+}
+
+.card4:hover .card-inner4{
+    transform: rotateY(180deg);
+}
+
+.card-font4, .card-back4{
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    position: absolute;
+    border-radius: 14px;
+}
+
+.card-font4{
+    display: flex;
+    background-color: #009FE3;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.card-back4{
+    display: flex;
+    transform: rotateY(180deg);
+    box-shadow: 2px 4px 6px #009FE3;
+}
+
+.card5{
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
+}
+
+.card-inner5{
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 0.8s ease-in-out;
+}
+
+.card5:hover .card-inner5{
+    transform: rotateY(180deg);
+}
+
+.card-font5, .card-back5{
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    position: absolute;
+    border-radius: 14px;
+}
+
+.card-font5{
+    display: flex;
+    background-color: #009FE3;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.card-back5{
+    display: flex;
+    border-radius: 14px;
+    border: none;
+    transform: rotateY(180deg);
+    box-shadow: 2px 4px 6px #009FE3;
+}
+
+.card{
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
+}
+
+.card-inner6{
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 0.8s ease-in-out;
+}
+
+.card6:hover .card-inner6{
+    transform: rotateY(180deg);
+}
+
+.card-font6, .card-back6{
+    width: 100%;
+    height: 100%;
+    border-radius: 14px;
+    backface-visibility: hidden;
+    position: absolute;
+}
+
+.card-font6{
+    display: flex;
+    background-color: #009FE3;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.card-back6{
+    display: flex;
+    transform: rotateY(180deg);
+    box-shadow: 2px 4px 6px #009FE3;
+}

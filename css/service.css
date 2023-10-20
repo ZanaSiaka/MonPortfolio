@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+    width: 100%;
+}
+
+body{
+    display: contents;
+    flex-direction: column;
+    min-height: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.principal{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+nav{
+    display: flex;
+    background-color: #002064;
+    height: 60px;
+    width: 100%;
+    justify-content: space-between;
+}
+
+nav img{
+    margin-left: 4%;
+    width: 50px;
+    height: 50px;
+    margin-top: 0.5%;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    font-size: 1.2em;
+    align-items: center;
+    margin-right: 4%;
+}
+
+nav ul li{
+    margin: 0 20px;
+    text-decoration: none;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    transition: all 0.3s ease-in-out;
+    transform: translateX(0);
+}
+
+nav ul li a:hover{
+    border-bottom: 5px solid;
+    transform: translateX(1);
+    border-radius: 3px;
+}
+
+nav ul li .service{
+    color: #009FE3;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3, 400px);
+    grid-template-rows: repeat(2, 400px);
+    justify-content: center;    
+    margin-top: 5%;
+}
+
+.grid .wokeu{
+    background-color: #009FE3;
+    width: 90%;
+    height: 350px;
+    border-radius: 14px;
+    padding-top: 8%;
+}
+
+.grid .wokeu p{
+    font-size: 1.2em;
+    margin-top: 5%;
+    margin-left: 8%;
+    color: white;
+    text-transform: uppercase;
+}
+
+.grid .wokeu .bas{
+    box-sizing: border-box;
+    background: #fff;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40%;
+    font-size: 1.2em;
+    color: #002064;
+}
+
+.grid .grid-item .bas, .grid .grid-item3 .bas, .grid .grid-item4 .bas, .grid .grid-item6 .bas{
+    margin-top: 37%;
+    border: #002064 solid 0.1px;
+    border-style: dotted;
+    border-radius: 8px;
+}
+
+.grid .grid-item2 .bas, .grid .grid-item5 .bas{
+    margin-top: 25%;
+    border: #002064 solid 0.1px;
+    border-style: dotted;
+    border-radius: 8px;
+}

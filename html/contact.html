@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="../css/contact.css">
+</head>
+<body>
+    <div class="principal">
+        <nav>
+            <img src="../image/CZS.svg" alt="">
+            <ul>
+                <li><a href="../html/accueil.html">Accueil</a></li>
+                <li><a href="../html/propos.html">À propos</a></li>
+                <li><a href="../html/comptence.html">Compétences</a></li>
+                <li><a href="../html/service.html">Services</a></li>
+                <li><a href="../html/portfolio.html">Portfolio</a></li>
+                <li><a href="../html/contact.html" class="contact">Contacts</a></li>
+            </ul>
+        </nav>
+
+        <div class="join">
+            <div class="conct one">
+                <h2>Mon Adresse</h2>
+                <p>Abobo, Abidjan, CÔTE D'IVOIRE</p>
+            </div>
+            <div class="conct two">
+                <h2>Profils Sociaux</h2>
+                <p>
+                    <img src="../image/LinkedIn.png" alt="">
+                    <img src="../image/Behance.png" alt="">
+                    <img src="../image/Facebook.png" alt="">
+                    <img src="../image/Instagram.png" alt="">
+                </p>
+            </div>
+            <div class="conct three">
+                <h2>Appelez-Moi</h2>
+                <p>+225 05 75 92 9035</p>
+            </div>
+            <div class="conct four">
+                <h2>Envoyez-Moi un e-mail</h2>
+                <p>zanacoul21@gmail.com</p>
+            </div>
+
+            <div class="form">
+                <form action="../PhP/recup.php" method="post">
+                    <div class="input">
+                        <input type="text" placeholder="Votre Pseudo" required minlength="4" maxlength="12" name="pseudo">
+                        <input type="email" placeholder="Votre e-mail" required name="mail">
+                    </div>
+                    <textarea name="commentaire" id="" cols="30" rows="10" placeholder="Commentaire..." required></textarea>
+                    <button type="submit" name="commentaire">Envoyer votre commentaire</button>
+                </form>
+                
+            </div>
+        </div>
+    </div>
+</body>
+</html>

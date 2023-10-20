@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+    width: 100%;
+}
+
+body{
+    display: contents;
+    flex-direction: column;
+    min-height: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.principal{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+nav{
+    display: flex;
+    background-color: #002064;
+    height: 60px;
+    width: 100%;
+    justify-content: space-between;
+}
+
+nav img{
+    margin-left: 4%;
+    width: 50px;
+    height: 50px;
+    margin-top: 0.5%;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    font-size: 1.2em;
+    align-items: center;
+    margin-right: 4%;
+}
+
+nav ul li{
+    margin: 0 20px;
+    text-decoration: none;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    transition: all 0.3s ease-in-out;
+    transform: translateX(0);
+}
+
+nav ul li a:hover{
+    border-bottom: 5px solid;
+    transform: translateX(1);
+    border-radius: 3px;
+}
+
+nav ul li .propos{
+    color: #009FE3;
+}
+
+.main{
+    height: 671px;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #002064;
+}
+
+.main img{
+    height: 500px !important;
+    width: 400px !important;
+    border: none !important;
+    border-radius: 20px;
+}
+
+.main div p{
+    font-size: 1.2em;
+    margin-top: 5%;
+}
+
+.main div p strong{
+    font-style: italic;
+}
