@@ -20,7 +20,7 @@ body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-nav{
+/* nav{
     display: flex;
     background-color: #002064;
     height: 60px;
@@ -64,7 +64,7 @@ nav ul li a:hover{
 
 nav ul li .propos{
     color: #009FE3;
-}
+} */
 
 .main{
     height: 671px;
@@ -76,10 +76,11 @@ nav ul li .propos{
 }
 
 .main img{
-    height: 500px !important;
-    width: 400px !important;
-    border: none !important;
+    height: 500px ;
+    width: 27% ;
+    border: none ;
     border-radius: 20px;
+    box-shadow: 2px 2px 20px #002064;
 }
 
 .main div p{
@@ -87,6 +88,46 @@ nav ul li .propos{
     margin-top: 5%;
 }
 
+.main div{
+    width: 50%;
+}
+
 .main div p strong{
     font-style: italic;
+}
+
+hr{
+    background-color: #002064;
+    height: 2px;
+    border: none;
+}
+
+@media screen and (max-width: 1000px) {
+
+    body{
+        width: 100vw;
+    }
+
+    .principal{
+        width: 100%;
+    }
+
+    .main{
+        width: 100%;
+        display: display;
+        flex-direction: column;
+    }
+
+    .main img{
+        margin-bottom: 50px;
+        margin-top: 20px;
+        overflow: clip;
+        /* border-radius: 100%; */
+        width: 40%;
+    }
+
+    .main div{
+        padding: 4%;
+        width: 100%;
+    }
 }
